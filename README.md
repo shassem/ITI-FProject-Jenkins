@@ -23,9 +23,10 @@ Created a Jenkinsfile with continuous integration (CI) and continuous deployment
 
 CI stage:
 
-- A new image is built with a version number equals to the build number inside Jenkins. 
+- Building the image with a version number equals to the Jenkins build number. 
 - Passing the Dockerhub credentials in order to login.
-- Pushing the new image to Dockerhub. <br />
+- Pushing the new image to Dockerhub.
+
 BUILD_NUMBER is an environment variable.
 
 CD stage:
