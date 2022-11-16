@@ -17,7 +17,7 @@ spec:
       - name: python-app
         image: shassem/hellopython:vtag
         ports:
-        - containerPort: 8000
+        - containerPort: 5000
 
 ---
 apiVersion: v1
@@ -30,5 +30,5 @@ spec:
   selector:
     app: backend-server
   ports:
-  - port: 8000
-    targetPort: 8000
+  - port: 5000
+    targetPort: 5000
