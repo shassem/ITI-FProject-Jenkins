@@ -26,8 +26,8 @@ pipeline {
                     sh """
                         gcloud auth activate-service-account --key-file=${config}
                         gcloud container clusters get-credentials my-gke-cluster --region us-central1 --project neat-talent-367811
-                        sed -i 's/tag/${env.BUILD_NUMBER}/g' python.yml
-                        kubectl apply -f python.yml
+                        sed -i 's/tag/${BUILD_NUMBER}/g' deployment.yml
+                        kubectl apply -f deployment.yml
                     """
                 }
             }
