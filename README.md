@@ -37,7 +37,7 @@ CD stage:
 When the pipeline finishes building, the app will be deployed on the GKE cluster based on this repository:
 https://github.com/shassem/GCPTerraform-Jenkins 
 
-### Voila! Your application is successfully deployed!🚀 
+### Voila! The application is successfully deployed!🚀 
 
 
 
