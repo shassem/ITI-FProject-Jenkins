@@ -6,22 +6,22 @@ This project is based on another repository: https://github.com/shassem/GCPTerra
 
 ## Illustration & Setup
 
-#### Jenkins Credentials Configurations:
+### Jenkins Credentials Configurations:
 - Create a credential for your Dockerhub account.
 - Secret file credentials that contains the VM service account key pair file in order to have access to the cluster.
 
-#### Dockerfile
+### Dockerfile
 
 Created a Dockerfile to dockerize my python app on my local machine.
 ```bash
     docker build -t shassem/hellopython .
     docker push shassem/hellopython
 ```
-#### Jenkinsfile
+### Jenkinsfile
 
 Created a Jenkinsfile with continuous integration (CI) and continuous deployment (CD) stages.
 
-CI stage:
+#### CI stage:
 
 - Building the image with a version number equals to the Jenkins build number. 
 - Passing the Dockerhub credentials in order to login.
@@ -29,7 +29,7 @@ CI stage:
 
 BUILD_NUMBER is an environment variable.
 
-CD stage:
+#### CD stage:
 
 - Passing the service account credentials to connect to the cluster
 - Replacing the "tag" in the deployment file with the new BUILD_NUMBER (version).
