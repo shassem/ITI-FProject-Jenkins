@@ -1,4 +1,8 @@
-# CI/CD Pipeline To Build and Deploy a Hello World app (ITI Final Project)
+# Jenkins CI/CD Pipeline To Build and Deploy a Hello World app (ITI Final Project)
+
+Jenkins application running as a pod on a GKE cluster (Google Cloud Platform resource) which is used to build and deploy a Hello World python app
+
+This project is based on another repository: https://github.com/shassem/GCPTerraform-Jenkins 
 
 ## Illustration & Setup
 
@@ -33,6 +37,7 @@ CD stage:
 When the pipeline finishes building, the app will be deployed on the GKE cluster based on this repository:
 https://github.com/shassem/GCPTerraform-Jenkins 
 
+### Voila! Your application is successfully deployed!🚀 
 
 
 
