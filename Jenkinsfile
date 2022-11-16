@@ -9,7 +9,7 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId: 'Dockerhub', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')])            {
 
                 sh """
-                    docker build -t shassem/hellopython:v$BUILD_NUMBER
+                    docker build -t shassem/hellopython:v$BUILD_NUMBER .
                     docker login -u ${USERNAME} -p ${PASSWORD}
                     docker push shassem/hellopython:v$BUILD_NUMBER
 
