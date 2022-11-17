@@ -4,7 +4,7 @@ Jenkins application running as a pod on a GKE cluster (Google Cloud Platform res
 
 [image]()
 
-This project is based on an infrastructure repository: https://github.com/shassem/GCPTerraform-Jenkins 
+This project is based on an infrastructure repository: https://github.com/shassem/ITI-FinalProject-Infrastructure
 
 ## Illustrations & Setup
 
@@ -38,7 +38,7 @@ BUILD_NUMBER is an environment variable.
 - Deploying the app with kubectl.
 
 When the pipeline finishes building, the app will be deployed on the GKE cluster based on this repository:
-https://github.com/shassem/GCPTerraform-Jenkins 
+https://github.com/shassem/ITI-FinalProject-Infrastructure
 
 #### GitHub Webhook
 
