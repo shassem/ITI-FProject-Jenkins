@@ -1,10 +1,12 @@
 # Jenkins CI/CD Pipeline To Build and Deploy a Hello World app (ITI Final Project)
 
-Jenkins application running as a pod on a GKE cluster (Google Cloud Platform resource) which is used to build and deploy a Hello World python app
+Jenkins application running as a pod on a GKE cluster (Google Cloud Platform resource) which is used to build and deploy a Hello World python app.
 
-This project is based on another repository: https://github.com/shassem/GCPTerraform-Jenkins 
+[image]()
 
-## Illustration & Setup
+This project is based on an infrastructure repository: https://github.com/shassem/GCPTerraform-Jenkins 
+
+## Illustrations & Setup
 
 ### Jenkins Credentials Configurations:
 - Create a credential for your Dockerhub account.
@@ -31,15 +33,26 @@ BUILD_NUMBER is an environment variable.
 
 #### CD stage:
 
-- Passing the service account credentials to connect to the cluster
+- Passing the service account credentials to connect to the cluster.
 - Replacing the "tag" in the deployment file with the new BUILD_NUMBER (version).
-- Deploying the app with kubectl
+- Deploying the app with kubectl.
 
 When the pipeline finishes building, the app will be deployed on the GKE cluster based on this repository:
 https://github.com/shassem/GCPTerraform-Jenkins 
 
+#### GitHub Webhook
+
+Changing the pipeline configurations by activating the "GitHub hook trigger for GITScm polling".
+[image]()
+
+From GitHub -->
+- Add a webhook.
+- Add the jenkins URL/github-webhook/ to the Payload URL.
+[image]()
+
 ### Voila! The application is successfully deployed!🚀 
 
+[image]()
 
 
 
