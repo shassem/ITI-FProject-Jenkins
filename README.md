@@ -2,7 +2,7 @@
 
 Jenkins application running as a pod on a GKE cluster (Google Cloud Platform resource) which is used to build and deploy a Hello World python app.
 
-[image]()
+[Jenkins IMG](https://www.jenkins.io/images/logo-title-opengraph.png)
 
 This project is based on an infrastructure repository: https://github.com/shassem/ITI-FinalProject-Infrastructure
 
@@ -43,16 +43,13 @@ https://github.com/shassem/ITI-FinalProject-Infrastructure
 #### GitHub Webhook
 
 Changing the pipeline configurations by activating the "GitHub hook trigger for GITScm polling".
-[image]()
+[GitHub Trigger from Jenkins](https://drive.google.com/file/d/1mkHnHNWzBq4Mn1QyhMaXPkB7HSMVNtCk/view)
 
 From GitHub -->
 - Add a webhook.
 - Add the jenkins URL/github-webhook/ to the Payload URL.
-[image]()
 
 ### Voila! The application is successfully deployed!🚀 
-
-[image]()
 
 
 
