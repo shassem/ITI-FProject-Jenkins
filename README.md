@@ -50,7 +50,6 @@ From GitHub -->
 - Add the jenkins URL/github-webhook/ to the Payload URL.
 [image]()
 
-
 ### Voila! The application is successfully deployed!🚀 
 
 [image]()
