@@ -6,6 +6,7 @@ Jenkins application running as a pod on a GKE cluster (Google Cloud Platform res
 
 This project is based on an infrastructure repository: https://github.com/shassem/ITI-FinalProject-Infrastructure
 
+
 ## Illustrations & Setup
 
 ### Jenkins Credentials Configurations:
